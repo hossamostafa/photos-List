@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/main_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:transitionName="img"
+        android:theme="@style/roundedImageView"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_launcher_background"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/grad_black_white"
+        android:layout_alignParentBottom="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/photographer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:shadowColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            app:drawableStartCompat="@drawable/ic_baseline_person_outline_24" />
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textColor="#fff"
+            android:shadowColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_margin="4dp"
+            app:drawableStartCompat="@drawable/ic_baseline_location_on_24" />
+    </LinearLayout>
+</RelativeLayout>
